@@ -1,0 +1,2 @@
+# Hash
+All about hash
