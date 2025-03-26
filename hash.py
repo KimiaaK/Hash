@@ -22,13 +22,12 @@ m = hashlib.sha256()
 data = "my name is Kimia and 123456 is my student ID"
 
 
-print(hash[-4:])
-
 i = 0
 while True:
     data = data + str(i)
-    m = m.update(data.encode("utf.8"))
+    m = m.update(data.encode("utf-8"))
     hash = m.hexdigest()
+    print(hash[-4:])
 
     if hash[-4:] == "1111":
         print(f"Found it! the string is {data} and the hash is {hash}")
